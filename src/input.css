@@ -3,6 +3,17 @@
 
 @theme {
     --font-karla: "Karla", sans-serif;
+    --animate-slideDown: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+   
+        '0%' {
+            transform: translateY(-100%)
+        },
+        100% {
+            transform: translateY(0)
+        }
 }
 
 /* ct = custom */
@@ -19,7 +30,7 @@
 }
 
 .ct-top-menu-expanded {
-    @apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
+    @apply absolute top-10 z-50 w-full bg-white text-center ;
 }
 
 .ct-top-menu-item-active {
